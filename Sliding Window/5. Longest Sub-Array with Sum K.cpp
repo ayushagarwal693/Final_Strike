@@ -38,7 +38,10 @@ public:
 					sum -= arr[i];
 					i++;
 				}
-
+				if (sum == k)
+				{
+					mx = max(j-i+1, mx);
+				}
 				j++;
 			}
 		}
